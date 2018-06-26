@@ -1,0 +1,19 @@
+name: Cause Commune
+type: theme
+description: Theme created for causecommune.be website
+base theme: classy
+package: causecommune
+core: 8.x
+
+libraries:
+    - causecommune/global-styling
+    
+regions:
+    header: 'Header'
+    content: 'Content'
+    commune_section: 'Commune section'
+    intro: 'Intro'
+    projects_section: 'Projects section'
+    sidebar_liste: 'Sidebar right - La liste'
+    contact_section: 'Contact section'
+    footer: 'Footer'
