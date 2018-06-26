@@ -1,0 +1,13 @@
+global-styling:
+    version: 1.x
+    css:
+        theme: 
+            include/bootstrap-3.3.7-dist/css/bootstrap.min.css: {}
+            css/style.min.css: {}
+            include/fonts/font-awesome.min.css: {}
+    js:
+        js/nav.js: {}
+        js/front--icons.js: {}
+    dependencies:
+        - core/jquery
+        
