@@ -1,0 +1,11 @@
+<?php
+
+function first_module_update_8001()
+{
+    $form = \Drupal\contact\Entity\ContactForm::load('formulairedecontact');
+    $form->setRecipients([
+        'corzocrespo@gmail.com',
+        'noelia@corzocrespo.com'
+    ]);
+    $form->save();
+}

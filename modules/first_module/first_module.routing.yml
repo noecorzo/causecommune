@@ -1,0 +1,8 @@
+nomdumodule.nomaction:
+    path: /mon-url
+    defaults:
+        _controller: Drupal\first_module\Controller\IntroController::clemence
+        _title: 'Titre de la page'
+    requirements:
+        _permission: 'access content'
+        _permission: 'access all views'
