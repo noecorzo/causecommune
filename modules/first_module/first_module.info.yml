@@ -1,0 +1,6 @@
+name: Social media module
+package: Cause Commune
+description: Module to insert the social media links.
+type: module
+core: 8.x
+version: VERSION

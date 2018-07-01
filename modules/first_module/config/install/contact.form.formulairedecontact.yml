@@ -1,0 +1,9 @@
+langcode: en
+status: TRUE
+dependences: {}
+id: formulairedecontact
+label: 'Bonjour!!!'
+recipients:
+    - 'n.corzo@interface3.be'
+reply: 'Merci pour votre email'
+weight: 0

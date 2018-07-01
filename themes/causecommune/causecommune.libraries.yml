@@ -3,7 +3,7 @@ global-styling:
     css:
         theme: 
             include/bootstrap-3.3.7-dist/css/bootstrap.min.css: {}
-            css/style.min.css: {}
+            css/header.min.css: {}
             include/fonts/font-awesome.min.css: {}
     js:
         js/nav.js: {}

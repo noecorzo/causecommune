@@ -1,0 +1,28 @@
+{% if page.header %}
+  <header class="container-fluid">
+       <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+           <div id="logos-ps-spa">
+               <img src="../include/assets/logos/logo_spa.eps" alt="Logo Spa">
+           </div>
+           <div id="logo-causecommune"></div>
+
+            <div id="lang-contact">
+                {{page.header}}
+                <div id="contact">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+
+                </div>
+            </div>
+        </div>
+    
+    </header>
+{% endif %}
+<main>
+    {% if page.sidebar_liste %}
+        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2" id="liste">
+            {{ page.sidebar_liste }}
+        </div>
+    
+    {% endif %}
+</main>

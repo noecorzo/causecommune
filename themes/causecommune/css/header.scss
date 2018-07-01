@@ -1,0 +1,157 @@
+$border: 3px solid red;
+$border2: 3px solid green;
+$green: #00b49d;
+$red: #ff0000;
+$margin: 40px;
+
+@font-face{
+    src: url(../include/fonts/comfortaa/Comfortaa_Regular.ttf);
+    font-family: comfortaa;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    padding: 0;
+    padding-top: 0;
+    margin: 0;
+}
+
+body{
+    font-family: comfortaa;
+}
+
+.container, .container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid::after{
+    padding: 0;
+    margin: 0;
+}
+.container-fluid::before{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    
+//    border: $border;
+    
+    div{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 !important;
+        align-items: center;
+    }
+    
+    #logo-causecommune{
+        background-image: url(../include/assets/logos/logo-causecommune_FR.png);
+        width: 150px;
+        height: 150px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    #lang-contact{
+        display: flex;
+        flex-direction: column;
+        
+        
+        ul{
+            list-style: none;
+            display: flex;
+            
+            .en{
+                display: none;
+            }
+            
+            .fr{
+                padding-right: 5px;
+            }
+            
+            
+        }
+        
+        .contextual{
+                display: none;
+            }
+        
+        #contact{
+            display: flex;
+            justify-content: space-between;
+            width: 35px;
+            
+        }
+    }
+    
+    
+}
+
+main{
+    
+    
+    #liste{
+        border-top: 3px solid $green;
+        border-right: 3px solid $green;
+        border-radius: 20px;
+        text-align: center;
+        
+        #block-views-block-liste-candidats-block-1 > h2{
+            color: white;
+            background-color: $red;
+            padding: 10px;
+            border-radius: 20px;
+            font-size: 2em;
+            position: relative;
+//            width: 100px;
+        }
+        
+        article{
+            position: relative;
+            margin-top: $margin;
+        }
+        
+        h2{
+//            text-align: left;
+            position: absolute;
+//            top: -10px;
+        }
+        
+        
+        
+        h2 > a {
+            color: $red;
+        }
+        
+        img{
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        
+        .fa{
+            color: $green;
+            margin: 3px;
+        }
+        
+        .field--name-field-nom{
+            margin-top: 15px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 1.3em;
+        }
+        
+        .field--name-field-descriptif{
+//            display: none;
+        }
+        
+//         article:hover > .field--name-field-descriptif{
+//            display: block;
+//        }
+    }
+}
+
