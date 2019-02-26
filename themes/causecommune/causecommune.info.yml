@@ -10,10 +10,12 @@ libraries:
     
 regions:
     header: 'Header'
+    navigation: 'Navigation'
     content: 'Content'
     commune_section: 'Commune section'
     intro: 'Intro'
     projects_section: 'Projects section'
+    programme_telecharger: 'Programme telecharger'
     sidebar_liste: 'Sidebar right - La liste'
     contact_section: 'Contact section'
     footer: 'Footer'

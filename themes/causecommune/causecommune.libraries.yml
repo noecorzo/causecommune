@@ -6,8 +6,10 @@ global-styling:
             css/header.min.css: {}
             include/fonts/font-awesome.min.css: {}
     js:
-        js/nav.js: {}
-        js/front--icons.js: {}
+        js/nav_2.js: {}
+        js/projets.js: {}
+        js/lang.js: {}
+        js/link.js: {}
     dependencies:
         - core/jquery
         

@@ -1,28 +1,105 @@
 {% if page.header %}
   <header class="container-fluid">
        <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
-           <div id="logos-ps-spa">
-               <img src="../include/assets/logos/logo_spa.eps" alt="Logo Spa">
-           </div>
            <div id="logo-causecommune"></div>
+           
+            <div id="logos-ps-spa">
+                <div id="logo-ps">
+                   </div>
+                   
+                <div id="logo-spa">
+                   </div>
+                   
+                <div id="logo-causecommune-hrz">
+                   </div>   
+           </div>
+           
+           
 
             <div id="lang-contact">
                 {{page.header}}
                 <div id="contact">
-                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <a href="https://www.facebook.com/Cause-commune-Samen-werken-1170-Watermael-Boitsfort-175033239870747/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="mailto:causecommune1170@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
 
                 </div>
             </div>
         </div>
-    
     </header>
 {% endif %}
-<main>
+
+<!--nav-->
+{% if page.navigation %}
+   <span id="navigation">
+        <nav id="nav" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+               {{ page.navigation }}
+           </div>
+
+        </nav>
+    </span>
+
+{% endif %}
+
+<!--<main>  -->
+
     {% if page.sidebar_liste %}
         <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2" id="liste">
+           <div id="hide-liste"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
             {{ page.sidebar_liste }}
-        </div>
-    
+        </div>   
     {% endif %}
+  
+<main class="col-xs-12 col-sm-12 col-md-10 col-lg-10">  
+    {% if page.commune_section %}
+        <div id="commune" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div id="display-liste">
+              <i class="fa fa-chevron-down" aria-hidden="true"></i><p>Les candidats</p>
+          </div>
+           
+            {{ page.commune_section }}
+            
+        </div>
+    {% endif %}
+      
+    {% if page.intro %}
+        <div id="intro" class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+           
+<!--
+            <p><span id="red">Cause</span> <span id="green">commune</span> – <span id="red">Samen</span> <span id="green">werken</span> est un <span id="gras">projet écosocial et citoyen</span>. Nous voulons réconcilier les politiques pour une société plus juste et plus égalitaire avec les combats pour la protection de notre environnement et de ses ressources. Nous pensons que nous ne pouvons pas dissocier les besoins humains et les limites de notre planète. C’est une cause commune pour l’émancipation et le bien-être qui passera par une réappropriation de la politique par chaque femme et chaque homme. Ce combat, nous voulons le mener depuis notre quotidien, depuis notre commune !</p>
+
+            <p><span id="red">Cause</span> <span id="green">commune</span> – <span id="red">Samen</span> <span id="green">werken</span> est un <span id="gras">projet d’engagement et de cohérence</span>. La politique ne doit pas être un travail en chambre, enfermé au sein du Conseil communal. C’est un travail de terrain qui doit trouver son inspiration auprès des citoyens et se concrétiser au sein de nos quartiers en cherchant à créer du lien plutôt qu’à diviser. C’est un travail qui doit être cohérent entre les prises de paroles et les actes posés. Ce fonctionnement a été au cœur du travail de nos conseillers communaux actuels et a permis de faire de nous le groupe le plus actif au sein du Conseil Communal portant des propositions constructives alimentées par les contacts et l'expérience de la société civile. Le lien entre la société civile, les citoyens et la politique est crucial pour la réalisation d'une communauté locale soudée et solidaire.</p>
+-->
+            {{ page.intro }}    
+            </div>
+    {% endif %}
+       
+    {% if page.projects_section %}
+        <div id="projets" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">     
+            {{ page.projects_section }}   
+            <div id="programme">
+                {{ page.programme_telecharger }}
+            </div>
+        </div>     
+    {% endif %}
+    
+    {% if page.contact_section %}
+         <div id="contact-section" class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+              {{ page.contact_section }}     
+        </div>
+     {% endif %}    
 </main>
+
+<footer class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+         <div id="restons-en-contact">
+             <p>Restons en contact</p>
+             <div id="contact">
+                    <a href="https://www.facebook.com/Cause-commune-Samen-werken-1170-Watermael-Boitsfort-175033239870747/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="mailto:causecommune1170@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            </div>
+            <div id="copy">&copy; - Cause Commune | Samen Worken 2018</div>
+         </div>
+         <div id="site-fait-par">
+             Cet site a été fait par <a href="http://anniekolemen.com/" target="_blank">AK</a> et <a href="http://www.corzocrespo.com/" target="_blank">NC</a>
+         </div>
+     </footer>
